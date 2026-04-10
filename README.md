@@ -58,8 +58,6 @@ Internet Traffic
        |       +-- Attack Map (real-time geolocation of attackers - port 64294)
        |       +-- SpiderFoot (OSINT reconnaissance on attacker IPs)
        |
-       +-- Threat Sharing
-               +-- EWSPoster (submits attack data to Deutsche Telekom threat feed)
 ```
 
 ## Active Containers
@@ -110,7 +108,6 @@ Internet Traffic
 | Kibana | Dashboards, queries, threat visualization | port 64297 (web) |
 | Attack Map | Real-time world map of incoming attacks | port 64294 (web) |
 | SpiderFoot | Automated OSINT on attacker IPs | localhost:64303 |
-| EWSPoster | Submits honeypot data to DTAG community threat feed | Automatic |
 | Map Data | Redis-backed geolocation data for attack map | Internal |
 | Map Redis | Redis instance for attack map | Internal |
 | Map Web | Web frontend for attack map | Internal |
@@ -134,7 +131,6 @@ Internet Traffic
 - Web UI (64297) and Attack Map (64294) protected by Nginx with htpasswd authentication
 - All honeypot containers run in isolated Docker bridge networks
 - Suricata monitors all traffic with BPF filters excluding management ports
-- EWSPoster shares anonymized attack data with the DTAG community threat intelligence feed
 
 ## Exposed Attack Surface
 
