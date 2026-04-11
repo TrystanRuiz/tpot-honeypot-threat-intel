@@ -8,7 +8,13 @@ Production honeypot deployment capturing real-world attack traffic from the open
 - [Architecture](#architecture)
 - [Honeypot Coverage](#honeypot-coverage)
 - [Security](#security)
-- [Installation Steps](Installation-Steps/T-Pot-Installation.md)
+
+### Docs
+
+| Folder | What's Inside |
+|--------|---------------|
+| [Installation-Steps/](Installation-Steps/) | T-Pot install guide with screenshots |
+| [screenshots/](screenshots/) | Visual documentation |
 
 ## Deployment
 
