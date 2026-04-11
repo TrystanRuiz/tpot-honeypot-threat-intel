@@ -2,6 +2,14 @@
 
 Production honeypot deployment capturing real-world attack traffic from the open internet. Built on T-POT Standard Edition with 20+ honeypot sensors and full ELK stack for log aggregation, threat visualization, and attack analysis.
 
+## Table of Contents
+
+- [Deployment](#deployment)
+- [Architecture](#architecture)
+- [Honeypot Coverage](#honeypot-coverage)
+- [Security](#security)
+- [Installation Steps](Installation-Steps/T-Pot-Installation.md)
+
 ## Deployment
 
 | Component | Detail |
