@@ -17,14 +17,4 @@ Production honeypot deployment capturing real-world attack traffic from the open
 ### Installation
 - [T-Pot Installation](Installation-Steps/T-Pot-Installation.md) - Full install on Ubuntu 24.04 with screenshots
 
-### Attack Simulation
-- Brute Force Attack *(in progress)*
-- Nmap Scanning *(in progress)*
-
-### Hardening
-- UFW & Fail2Ban *(in progress)*
-- SSH Hardening *(in progress)*
-
-### Analysis
-- Attack Dashboard & Kibana *(in progress)*
-- Threat Intelligence Review *(in progress)*
+The rest is in progress.
