@@ -16,3 +16,4 @@ Production honeypot deployment capturing real-world attack traffic from the open
 
 - [T-POT Installation Steps](T-POT-Installation-Steps.md) — Full install on Ubuntu 24.04 with screenshots
 - [Automated IP Blocking Pipeline](Automated-IP-Blocking-Pipeline.md) — T-POT + AbuseIPDB + OPNsense automated firewall blocking
+- [Async Benchmark](Async-Benchmark.md) — Sync vs async performance comparison for AbuseIPDB reputation checks
