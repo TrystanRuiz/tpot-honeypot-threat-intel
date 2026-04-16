@@ -176,7 +176,7 @@ async def check_ip_async(session, sem, ip, info, index, total):
     """Check a single IP against AbuseIPDB — async, semaphore-bounded."""
     hit_count = info["hits"] if isinstance(info, dict) else info
     headers   = {"Key": ABUSEIPDB_API_KEY, "Accept": "application/json"}
-    params    = {"ipAddress": ip, "maxAgeInDays": 90, "verbose": True}
+    params    = {"ipAddress": ip, "maxAgeInDays": 90, "verbose": 1}
 
     async with sem:  # max MAX_CONCURRENT requests in-flight at once
         try:
