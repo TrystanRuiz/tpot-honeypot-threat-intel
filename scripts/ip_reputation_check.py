@@ -321,13 +321,10 @@ def generate_report(results):
 def opnsense_request(method, endpoint, data=None):
     """Make an authenticated request to the OPNsense API."""
     url = f"{OPNSENSE_BASE_URL}/{endpoint}"
-    resp = requests.request(
-        method, url,
-        auth=(OPNSENSE_API_KEY, OPNSENSE_API_SECRET),
-        json=data if data else {},
-        verify=False,
-        timeout=15
-    )
+    kwargs = dict(auth=(OPNSENSE_API_KEY, OPNSENSE_API_SECRET), verify=False, timeout=15)
+    if data is not None:
+        kwargs["json"] = data
+    resp = requests.request(method, url, **kwargs)
     resp.raise_for_status()
     return resp.json()
 
